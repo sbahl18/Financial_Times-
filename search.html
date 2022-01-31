@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/fontawesome-all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+    <title>Document</title>
+    <style>
+        #hidden-search{
+            background-color: #CCC1B7;
+        }
+        #result {
+   position: absolute;
+   width: 100%;
+   max-width:499px;
+   cursor: pointer;
+   overflow-y: auto;
+   max-height: 400px;
+   box-sizing: border-box;
+   z-index: 1001;
+  }
+  .link-class:hover{
+   background-color:#f1f1f1;
+  }
+  .container.search_container img{
+      width:20%;
+  }
+    </style>
+</head>
+<body>
+    <header id="main-header" class="pk-bg-color">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class = "col-xl-2 col-lg-2 col-sm-2 col-2 center">
+                    <div class="header-lft ">
+                        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                        <i class="fas fa-search srch-icon"  onclick="myFunction()"></i>
+                    </div>
+                </div>
+                <div class = "col-xl-8 col-lg-8 col-sm-8 col-8 center">
+                    <div class"header-cntr">
+                        <a class="header-logo upr-case" href="#">
+                            <span>
+                                financial times
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class = "col-xl-2 col-lg-2 col-sm-2 col-2 center">
+                    <div class="header-rgt ">
+                        <a href="#">
+                            <span>myFT</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="hidden-search">
+        <div class="container search_container">
+            <form action="#">
+                <input type="text" placeholder="Search TheFT" name="search" id="search" class="form-control" autofocus>
+                <ul class="list-group" id="result"></ul>
+                <br />
+                <button type="submit">search</button>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+            </form>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/menu-open.js"></script> 
+    <script src="js/bootstrap.min.js"async></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("hidden-search");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+         $.ajaxSetup({ cache: false });
+         $('#search').keyup(function(){
+          $('#result').html('');
+          $('#state').val('');
+          var searchField = $('#search').val();
+          var expression = new RegExp(searchField, "i");
+          $.getJSON('data.json', function(data) {
+           $.each(data, function(key, value){
+            if (value.name.search(expression) != -1 || value.location.search(expression) != -1)
+            {
+             $('#result').append('<li class="list-group-item link-class"><img src="'+value.image+'" height="40" width="40" class="img-thumbnail" /> '+value.name+' | <span class="text-muted">'+value.location+'</span></li>');
+            }
+           });   
+          });
+         });
+         
+         $('#result').on('click', 'li', function() {
+          var click_text = $(this).text().split('|');
+          $('#search').val($.trim(click_text[0]));
+          $("#result").html('');
+         });
+        });
+        </script>        
+</body>
+</html>

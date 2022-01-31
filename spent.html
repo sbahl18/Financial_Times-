@@ -1,0 +1,2206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/fontawesome-all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+    <title>How To Spent It</title>
+</head>
+<body class="pk-bg-color">
+    <div  id="container">
+        <div class="financial-container">
+            <header id="top-header">
+                <div class="container-fluid custom-container">
+                    <div class='row'>
+                        <nav id="sub-nav">
+                            <div class="row caps custom-row">
+                                <div class="col-xl-10 col-lg-10 col-sm-12 col-12">
+                                    <ul class="top-nav">
+                                        <li>
+                                            <a href="/">
+                                                <span>FTSE 100</span>
+                                                <span class="stk-percnt low">-0.19%</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/">
+                                                <span>S&ampP 500</span>
+                                                <span class="stk-percnt high">-0.19%</span>
+                                            </a>
+                                        </li>
+                                        <li class="hide-data">
+                                            <a href="#">
+                                                <span>Euro/Dollar</span>
+                                                <span class="stk-percnt low">-0.19%</span>
+                                            </a>
+                                        </li>
+                                        <li class="hide-data">
+                                            <a href="#">
+                                                <span>	Pound/Dollar</span>
+                                                <span class="stk-percnt high">-0.19%</span>
+                                            </a>
+                                        </li>
+                                        <li class="hide-data  mrkt-data">
+                                            <a href="#">
+                                                <span>	Brent Crude Oil</span>
+                                                <span class="stk-percnt low">-0.19%</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-sm-12 col-12 mrkt-data">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Visit Market Data</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="main-header" class="pk-bg-color">
+                <div class="container-fluid ">
+                    <div class="row">
+                        <div class = "col-xl-2 col-lg-2 col-sm-2 col-2 center">
+                            <div class="header-lft ">
+                                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                                <i class="fas fa-search srch-icon"></i>
+                            </div>
+                        </div>
+                        <div class = "col-xl-8 col-lg-8 col-sm-8 col-8 center">
+                            <div class"header-cntr">
+                                <a class="header-logo upr-case" href="#">
+                                    <span>
+                                        financial times
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class = "col-xl-2 col-lg-2 col-sm-2 col-2 center">
+                            <div class="header-rgt ">
+                                <a href="#">
+                                    <span>myFT</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- sidebar -->
+            <div id="mySidenav" class="sidenav pk-bg-color">
+                <div class="side-container">
+                    <div class="sidernav-header">
+                        <a href="index.html" class="upr-case">
+                            <span class="side-main-heading">
+                                Financial Times
+                            </span>
+                        </a>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <p class="caps caption">international edition</p>
+                    </div>
+                    <div class="search-container">
+                        <form action="#">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <nav class="sidebar-homepage">
+                        <ul class="smenu-list">
+                            <li class="smenu-item">
+                                <a href="index.html" class="side-menu-link">Switch to UK Edition</a>
+                            </li>
+                            <li class="smenu-item smenu-item-head">
+                                Top sections
+                            </li>
+                            <li class="smenu-item">
+                                <a href="index.html" class="side-menu-link">Home</a>
+                            </li>
+                            <li class="smenu-item">
+                                <div class="smenu-toggle-wrapper">
+                                    <a href="#" class="side-menu-link">world</a>
+                                    <button  class="drp-btn" >
+                                        <i class="fas fa-chevron-circle-down" onclick="clicked()"></i>
+                                    </button> 
+                                    <ul class="dropdown-nav" id="myDropdown">
+                                        <li>
+                                            <a href="#">Global Economy</a>
+                                            <a href="">UK</a>
+                                            <a href="">US</a>
+                                            <a href="">China</a>
+                                            <a href="">Africa</a>
+                                            <a href="">Asia Pacific</a>
+                                            <a href="">Emterging Markets</a>
+                                            <a href="">Europe</a>
+                                            <a href="">Americans</a>
+                                            <a href="">Middle East and North Africa</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="smenu-item">
+                                <div class="smenu-toggle-wrapper">
+                                    <a href="#" class="side-menu-link">US</a>
+                                    <button class="drp-btn1">
+                                        <i class="fas fa-chevron-circle-down" ></i>   
+                                    </button> 
+                                    <ul class="dropdown-nav1" id="myDropdown">
+                                        <li>
+                                            <a href="#">Global Economy</a>
+                                            <a href="">UK</a>
+                                            <a href="">US</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="smenu-item">
+                                <div class="smenu-toggle-wrapper">
+                                    <a href="#" class="side-menu-link">Companies</a>
+                                    <button class="drp-btn2">
+                                        <i class="fas fa-chevron-circle-down" ></i>
+                                    </button> 
+                                    <ul class="dropdown-nav2" id="myDropdown">
+                                        <li>
+                                            <a href="#">Energy</a>
+                                            <a href="">Financials</a>
+                                            <a href="">Health</a>
+                                            <a href="">Industrials</a>
+                                            <a href="">Media</a>
+                                            <a href="">Professional Services</a>
+                                            <a href="">Retail &amp Consumer</a>
+                                            <a href="">Tech Sector</a>
+                                            <a href="">Telecoms</a>
+                                            <a href="">Transport</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="smenu-item">
+                                <a href="#"class="side-menu-link">
+                                    Tech
+                                </a>
+                            </li>
+                            <li class="smenu-item">
+                                <div class="smenu-toggle-wrapper">
+                                    <a href="#" class="side-menu-link">Markets</a>
+                                    <button class="drp-btn3">
+                                        <i class="fas fa-chevron-circle-down" ></i>
+                                    </button> 
+                                    <ul class="dropdown-nav3" id="myDropdown">
+                                        <li>
+                                            <a href="#">fastFT</a>
+                                            <a href="">Alphaville</a>
+                                            <a href="">Markets Data</a>
+                                            <a href="">Capitals Markets</a>
+                                            <a href="">Commodities</a>
+                                            <a href="">Currencies</a>
+                                            <a href="">Equities</a>
+                                            <a href="">Fund Management</a>
+                                            <a href="">Trading</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="smenu-item">
+                                <div class="smenu-toggle-wrapper">
+                                    <a href="#" class="side-menu-link">Opinion</a>
+                                    <button class="drp-btn4">
+                                        <i class="fas fa-chevron-circle-down" ></i>
+                                    </button> 
+                                    <ul class="dropdown-nav4" id="myDropdown">
+                                        <li>
+                                            <a href="#">Columnists</a>
+                                            <a href="">The FT View</a>
+                                            <a href="">The Big Read</a>
+                                            <a href="">Instant Insight</a>
+                                            <a href="">Commodities</a>
+                                            <a href="">Lex</a>
+                                            <a href="">Equities</a>
+                                            <a href="">Fund Management</a>
+                                            <a href="">Letters</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="smenu-item">
+                                <div class="smenu-toggle-wrapper">
+                                    <a href="#" class="side-menu-link">Work &amp Work</a>
+                                    <button class="drp-btn5">
+                                        <i class="fas fa-chevron-circle-down" ></i> 
+                                    </button> 
+                                    <ul class="dropdown-nav5" id="myDropdown">
+                                        <li>
+                                            <a href="#">Business School Rankings</a>
+                                            <a href="">Business Education</a>
+                                            <a href="">Entreprenuership</a>
+                                            <a href="">Recruitment</a>
+                                            <a href="">Commodities</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="smenu-item">
+                                <div class="smenu-toggle-wrapper">
+                                    <a href="#" class="side-menu-link">Life &amp Arts</a>
+                                    <button class="drp-btn6">
+                                        <i class="fas fa-chevron-circle-down" ></i> 
+                                    </button> 
+                                    <ul class="dropdown-nav6" id="myDropdown">
+                                        <li>
+                                            <a href="#">Arts</a>
+                                            <a href="">Books</a>
+                                            <a href="">Food &amp Drink</a>
+                                            <a href="">FT Magazine</a>
+                                            <a href="">House &amp Home</a>
+                                            <a href="">Next Act</a>
+                                            <a href="">Style</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="smenu-item">
+                                <div class="smenu-toggle-wrapper">
+                                    <a href="#" class="side-menu-link">Personal finance</a>
+                                    <button class="drp-btn7">
+                                        <i class="fas fa-chevron-circle-down" ></i> 
+                                    </button>
+                                    <ul class="dropdown-nav7" id="myDropdown">
+                                        <li>
+                                            <a href="#">Properties &amp Mortgages</a>
+                                            <a href="">Investments</a>
+                                            <a href="">Pensions</a>
+                                            <a href="">Tax</a>
+                                            <a href="">Bankings &amp Saving</a>
+                                            <a href="">Advice &amp Comment</a>
+                                        </li>
+                                    </ul> 
+                                </div>
+                            </li>
+                            <li  class="smenu-item">
+                                <a href="#" class="side-menu-link">
+                                    Science
+                                </a>
+                            </li>
+                            <li class="smenu-item">
+                                <a href="#" class="side-menu-link">
+                                    Special Reports
+                                </a>
+                            </li>
+                            <li class="smenu-item smenu-item-head">
+                                FT recommends
+                            </li>
+                            <li class="smenu-item"><a href="" class="side-menu-link">Lex</a></li>
+                            <li class="smenu-item"><a href="" class="side-menu-link">Alphaville</a></li>
+                            <li class="smenu-item"><a href="" class="side-menu-link">EM Squared</a></li>
+                            <li class="smenu-item"><a href="" class="side-menu-link">Lunch with the FT</a></li>
+                            <li class="smenu-item"><a href="" class="side-menu-link">FT confidential Research</a></li>
+                            <li class="smenu-item"><a href="" class="side-menu-link">Video</a></li>
+                            <li class="smenu-item"><a href="" class="side-menu-link">Podcasts</a></li>
+                            <li class="smenu-item"><a href="" class="side-menu-link">Blogs</a></li>
+                            <li class="smenu-item"><a href="" class="side-menu-link">Newsfeed</a></li>
+                            <li class="smenu-item"><a href="" class="side-menu-link">NewsLetter</a></li>'
+                            <li class="smenu-item divide"><a href="" class="side-menu-link side-menu-link-bold">myFT</a></li>
+                            <li class="smenu-item"><a href="" class="side-menu-link side-menu-link-bold">Portfolio</a></li>
+                            <li class="smenu-item"><a href="" class="side-menu-link side-menu-link-bold">Today's Newspaper(ePaper)</a></li>
+                            <li class="smenu-item"><a href="" class="side-menu-link side-menu-link-bold">Crossword</a></li>
+                            <li class="smenu-item"><a href="" class="side-menu-link side-menu-link-bold">Our Apps</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="smenu-user">
+                        <ul class="smenu-list">
+                            <li class="smenu-item"><a href="" class="side-menu-link">Help Centre</a></li>
+                            <li class="smenu-item"><a href="" class="side-menu-link">Subscribe</a></li>
+                            <li class="smenu-item"><a href="" class="side-menu-link">Sign In</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- main-nav -->
+            <nav id="main-nav" class=" pk-bg-color">
+                <div class="container custom-container">
+                    <div class="row">
+                        <div class="col-xl-10 col-lg-10 col-sm-12 col-12 ">
+                            <ul class="upr-case main-nav-list smenu-list">
+                                <li class="smenu-item"><a href="index.html" class="side-menu-link">home</a></li>
+                                <li class="smenu-item"><a href="world.html" class="side-menu-link">world</a></li>
+                                <li class="smenu-item"><a href="us.html" class="side-menu-link">us</a></li>
+                                <li class="smenu-item hide-data"><a href="companies.html" class="side-menu-link">companies</a></li>
+                                <li class="smenu-item hide-data"><a href="technology.html" class="side-menu-link">tech</a></li>
+                                <li class="smenu-item hide-data"><a href="market.html" class="side-menu-link">markets</a></li>
+                                <li class="smenu-item hide-data"><a href="opinion.html" class="side-menu-link">opinion</a></li>
+                                <li class="smenu-item hide-data"><a href="life_and_art.html" class="side-menu-link">life &amp arts</a></li>
+                                <li class="smenu-item hide-data"><a href="spent.html" class="side-menu-link">how to spent it</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-sm-12 col-12">
+                            <ul class="caps smenu-list user-subscribe">
+                                <li class="smenu-item hide-data"><a href="" class="side-menu-link">sign in</a></li>
+                                <li class="smenu-item hide-data"><a href="" class=" ft-nav-button side-menu-link">subscribe</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav id="main-nav" class=" pk-bg-color world-nav">
+                <div class="container custom-container">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-sm-12 col-12 ">
+                            <ul class="caps main-nav-list smenu-list">
+                                <li class="smenu-item upr-case"><a href="" class="side-menu-link hglgt-clr">World</a></li>
+                                <li class="smenu-item"><a href="" class="side-menu-link light-font">Global Economy</a></li>
+                                <li class="smenu-item"><a href="" class="side-menu-link light-font">UK</a></li>
+                                <li class="smenu-item hide-data"><a href="" class="side-menu-link light-font">US</a></li>
+                                <li class="smenu-item hide-data"><a href="" class="side-menu-link light-font">China</a></li>
+                                <li class="smenu-item hide-data"><a href="" class="side-menu-link light-font">markets</a></li>
+                                <li class="smenu-item hide-data"><a href="" class="side-menu-link light-font">opinion</a></li>
+                                <li class="smenu-item hide-data"><a href="" class="side-menu-link light-font">life &amp arts</a></li>
+                                <li class="smenu-item hide-data"><a href="" class="side-menu-link light-font">how to spent it</a></li>
+                                <li class="smenu-item hide-data"><a href="" class="side-menu-link light-font">life &amp arts</a></li>
+                                <li class="smenu-item hide-data"><a href="" class="side-menu-link light-font">how to spent it</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav id="hidden-nav"  class=" pk-bg-color">
+                <div class="container custom-container">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+                            <div class="header-lft ">
+                                <span style="cursor:pointer" onclick="openNav()">&#9776; </span>
+                                <i class="fas fa-search srch-icon"></i>
+                            </div>   
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-7 col-7">
+                            <ul class="upr-case main-nav-list smenu-list hide-data">
+                                <li class="smenu-item hide-data"><a href="index.html" class="side-menu-link">home</a></li>
+                                <li class="smenu-item hide-data"><a href="world.html" class="side-menu-link">world</a></li>
+                                <li class="smenu-item hide-data"><a href="us.html" class="side-menu-link">us</a></li>
+                                <li class="smenu-item hide-data"><a href="companies.html" class="side-menu-link">companies</a></li>
+                                <li class="smenu-item hide-data"><a href="technology.html" class="side-menu-link">tech</a></li>
+                                <li class="smenu-item hide-data"><a href="market.html" class="side-menu-link">markets</a></li>
+                                <li class="smenu-item hide-data"><a href="opinion.html" class="side-menu-link">opinion</a></li>
+                                <li class="smenu-item hide-data"><a href="life_and_art.html" class="side-menu-link">life &amp arts</a></li>
+                                <li class="smenu-item hide-data"><a href="spent.html" class="side-menu-link">how to spent it</a></li>
+                            </ul>
+                            <div class"header-cntr hide-heading">
+                                <a class="header-logo upr-case" href="#">
+                                    <span>
+                                        financial times
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-sm-3 col-3">
+                            <ul class="caps smenu-list user-subscribe">
+                                <li class="smenu-item hide-data "><a href="" class="side-menu-link">sign in</a></li>
+                                <li class="smenu-item"><a href="" class=" ft-nav-button side-menu-link">subscribe</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section id="advertisement">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-offset-4">
+                            <li class="smenu-item hide-data"><a href="" class=" ft-nav-button side-menu-link">subscribe</a></li>   
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="top-stories mr-top world-tp-stories spend">
+                <div class="container">
+                    <h1>
+                        <a href="">How To Spent It</a>
+                    </h1>
+                    <form method="GET" class="myft-onboarding">
+                        <input type="hidden"/>
+                        <button class="myft-follow-button world-btn"  data-toggle="tooltip" title="Add to myFT">Add to myFT</button>
+                    </form>
+                    <div class="row mr-top">
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+                            <div class="row" id="w-section1">
+                                <div class ="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="teaser teaser-article">
+                                        <div class="teaser_content">
+                                            <div class="teaser_meta">
+                                               <a href="#" class="teaser_tag">
+                                                    InterviewFacebook Inc
+                                                </a> 
+                                            </div>
+                                            <div class="teaser_heading">
+                                                <a href="">
+                                                    Clegg seeks to be ‘bridge’ between Big Tech and government
+                                                </a>
+                                            </div>
+                                            <p class="teaser_standfirst">
+                                                Former UK deputy prime minister to move to Silicon Valley next year
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class ="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="teaser_img_container world-img">
+                                        <a href="">
+                                            <div class="teaser_img_wrapper w-img-wrapper">
+                                                <img src="assets/images/t1.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mr-top">
+                                        <h2 class="teaser_heading top-heading">
+                                            <a href=""class="f-22">News</a>
+                                        </h2>
+                                        <div class="teaser teaser_img b-teaser">
+                                            <div class="top-stories mr-top  teaser_content">
+                                                <div class="teaser_meta">
+                                                    <a href="#" class="caps teaser_tag">
+                                                        Cryptocurrencies
+                                                    </a> 
+                                                </div> 
+                                                <div class="teaser_heading">
+                                                    <a href="" class="f-22">
+                                                        The rise and fall of Ethereum
+                                                    </a>
+                                                </div>
+                                                <p class="teaser_standfirst">
+                                                    Cult cryptocurrency is down 70% this year but still loved by enthusiasts
+                                                </p>
+                                            </div>
+                                        </div> 
+                                        <div class="teaser_img_container">
+                                            <a href="">
+                                                <div class="teaser_img_wrapper ab-img">
+                                                    <img src="assets/images/t2.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>  
+                                    </div>   
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mr-top t1">
+                                        <h2 class="teaser_heading top-heading">
+                                            <a href=""class="f-22">Opinion &amp Analysis</a>
+                                        </h2>
+                                        <div class="teaser teaser_img b-teaser">
+                                            <div class="top-stories mr-top  teaser_content">
+                                                <div class="teaser_meta">
+                                                    <a href="#" class="caps teaser_tag">
+                                                        Technology sector
+                                                    </a> 
+                                                </div> 
+                                                <div class="teaser_heading">
+                                                    <a href="" class="f-22">
+                                                        UK’s political class finds new home in Silicon Valley
+                                                    </a>
+                                                </div>
+                                                <p class="teaser_standfirst">
+                                                    US-based companies find willing recruits in figures such as Nick Clegg
+                                                </p>  
+                                           </div>
+                                        </div> 
+                                        <div class="teaser_img_container">
+                                            <a href="">
+                                                <div class="teaser_img_wrapper ab-img">
+                                                    <img src="assets/images/t3.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>  
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12  t1">
+                            <div class="teaser teaser_img">
+                                <h2 class="teaser_heading top-heading" style="text-align:center">
+                                    <a href=""class="f-22" >Recommended</a>
+                                </h2>
+                                <div class="teaser_img_container world-img">
+                                    <a href="">
+                                        <div class="teaser_img_wrapper w-img-wrapper">
+                                            <img src="assets/images/t4.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="mr-top  teaser_content center">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="caps teaser_tag">
+                                            AnalysisThe Big Read
+                                        </a> 
+                                    </div> 
+                                    <div class="teaser_heading ad-heading">
+                                        <a href="" class="f-18">
+                                            Facebook: the court of King Mark
+                                        </a>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="teaser teaser_img">
+                                <div class="teaser_img_container world-img">
+                                    <a href="">
+                                        <div class="teaser_img_wrapper w-img-wrapper">
+                                            <img src="assets/images/t5.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="mr-top  teaser_content center">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="caps teaser_tag ">
+                                            Paul Allen
+                                        </a> 
+                                    </div> 
+                                    <div class="teaser_heading ad-heading">
+                                        <a href="" class="f-18">
+                                            Paul Allen, software pioneer, 1953-2018
+                                        </a>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="teaser teaser_img">
+                                <div class="teaser_img_container world-img">
+                                    <a href="">
+                                        <div class="teaser_img_wrapper w-img-wrapper">
+                                            <img src="assets/images/t6.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="mr-top  teaser_content center">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="caps teaser_tag">
+                                            AnalysisFT Series
+                                        </a> 
+                                    </div> 
+                                    <div class="teaser_heading ad-heading">
+                                        <a href="" class="f-18">
+                                             Race to a trillion: tech charge towards historic market cap  
+                                        </a>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="teaser teaser_img">
+                                <div class="teaser_img_container world-img">
+                                    <a href="">
+                                        <div class="teaser_img_wrapper w-img-wrapper">
+                                            <img src="assets/images/r1.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section3" class="top-stories mr-top t3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="teaser teaser_img">
+                                <div class="teaser_img_container">
+                                    <a href="">
+                                        <div class="teaser_img_wrapper">
+                                            <img src="assets/images/main1.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="top-stories mr-top  teaser_content center">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="caps teaser_tag">
+                                           the big read
+                                        </a> 
+                                    </div> 
+                                    <div class="teaser_heading mr-top">
+                                        <a href="">
+                                            Midterms: ‘Trump effect’ weighs on America’s boom 
+                                        </a>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                            <div class="teaser teaser-article a1">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+											Jo Ellison
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-top ">
+                                        <a href=""> 
+									        Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                    <p class="teaser_standfirst">
+                                        Seven alleged agents indicted in US after Dutch say cyber attack was foiled
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                            <div class="teaser teaser-article art-clr">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-top ">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                    <p class="teaser_standfirst">
+                                        Seven alleged agents indicted in US after Dutch say cyber attack was foiled
+                                    </p>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id-"section4" class="mr-top ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="hglgt-news">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                        <div class="teaser teaser_img">
+                                            <div class="img_container">
+                                                <a href="">
+                                                    <div class="img_wrapper">
+                                                        <img src="assets/images/s4-1.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                        <div class="teaser teaser-article top-news">
+                                            <div class="teaser_content">
+                                                <div class="teaser_meta">
+                                                    <a href="#" class="teaser_tag">
+                                                        Cyber warfare
+                                                    </a> 
+                                                </div>
+                                                <div class="teaser_heading">
+                                                    <a href=""> 
+                                                        Happy birthday #MeToo — there’s still a long way to go
+                                                    </a>
+                                                </div>
+                                                <p class="teaser_standfirst">
+                                                    Seven alleged agents indicted in US after Dutch say cyber attack was foiled
+                                                </p>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="hglgt-news mr-top">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                        <div class="teaser teaser_img">
+                                            <div class="img_container">
+                                                <a href="">
+                                                    <div class="img_wrapper">
+                                                        <img src="assets/images/s4-1.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                        <div class="teaser teaser-article top-news">
+                                            <div class="teaser_content">
+                                                <div class="teaser_meta">
+                                                    <a href="#" class="teaser_tag">
+                                                        Cyber warfare
+                                                    </a> 
+                                                </div>
+                                                <div class="teaser_heading">
+                                                    <a href=""> 
+                                                        Happy birthday #MeToo — there’s still a long way to go
+                                                    </a>
+                                                </div>
+                                                <p class="teaser_standfirst">
+                                                    Seven alleged agents indicted in US after Dutch say cyber attack was foiled
+                                                </p>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="hglgt-news mr-top">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                        <div class="teaser teaser_img">
+                                            <div class="img_container">
+                                                <a href="">
+                                                    <div class="img_wrapper">
+                                                        <img src="assets/images/s4-1.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                        <div class="teaser teaser-article top-news">
+                                            <div class="teaser_content">
+                                                <div class="teaser_meta">
+                                                    <a href="#" class="teaser_tag">
+                                                        Cyber warfare
+                                                    </a> 
+                                                </div>
+                                                <div class="teaser_heading">
+                                                    <a href=""> 
+                                                        Happy birthday #MeToo — there’s still a long way to go
+                                                    </a>
+                                                </div>
+                                                <p class="teaser_standfirst">
+                                                    Seven alleged agents indicted in US after Dutch say cyber attack was foiled
+                                                </p>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="hglgt-news">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                        <div class="teaser teaser_img">
+                                            <div class="img_container">
+                                                <a href="">
+                                                    <div class="img_wrapper">
+                                                        <img src="assets/images/s4-1.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                        <div class="teaser teaser-article top-news">
+                                            <div class="teaser_content">
+                                                <div class="teaser_meta">
+                                                    <a href="#" class="teaser_tag">
+                                                        Cyber warfare
+                                                    </a> 
+                                                </div>
+                                                <div class="teaser_heading">
+                                                    <a href=""> 
+                                                        Happy birthday #MeToo — there’s still a long way to go
+                                                    </a>
+                                                </div>
+                                                <p class="teaser_standfirst">
+                                                    Seven alleged agents indicted in US after Dutch say cyber attack was foiled
+                                                </p>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="hglgt-news mr-top">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                        <div class="teaser teaser_img">
+                                            <div class="img_container">
+                                                <a href="">
+                                                    <div class="img_wrapper">
+                                                        <img src="assets/images/s4-1.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                        <div class="teaser teaser-article top-news">
+                                            <div class="teaser_content">
+                                                <div class="teaser_meta">
+                                                    <a href="#" class="teaser_tag">
+                                                        Cyber warfare
+                                                    </a> 
+                                                </div>
+                                                <div class="teaser_heading">
+                                                    <a href=""> 
+                                                        Happy birthday #MeToo — there’s still a long way to go
+                                                    </a>
+                                                </div>
+                                                <p class="teaser_standfirst">
+                                                    Seven alleged agents indicted in US after Dutch say cyber attack was foiled
+                                                </p>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="hglgt-news mr-top">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                        <div class="teaser teaser_img">
+                                            <div class="img_container">
+                                                <a href="">
+                                                    <div class="img_wrapper">
+                                                        <img src="assets/images/s4-1.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                        <div class="teaser teaser-article top-news">
+                                            <div class="teaser_content">
+                                                <div class="teaser_meta">
+                                                    <a href="#" class="teaser_tag">
+                                                        Cyber warfare
+                                                    </a> 
+                                                </div>
+                                                <div class="teaser_heading">
+                                                    <a href=""> 
+                                                        Happy birthday #MeToo — there’s still a long way to go
+                                                    </a>
+                                                </div>
+                                                <p class="teaser_standfirst">
+                                                    Seven alleged agents indicted in US after Dutch say cyber attack was foiled
+                                                </p>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section5"  class="mr-top advertisement">
+                <div class="container ad-container">
+                    <img src="assets/images/news.png" alt=""/>
+                </div>
+            </section>
+            <section id="section6" class="mr-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 mr-top">
+                            <h2 class="teaser_heading top-heading">
+                                <a href="" class="f-22">Asian Pacific News</a>
+                            </h2>
+                            <div class="row mr-top">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="teaser teaser_img">
+                                        <div class="top-stories mr-top  teaser_content">
+                                            <div class="teaser_meta">
+                                                <a href="#" class="caps teaser_tag">
+                                                the big read
+                                                </a> 
+                                            </div> 
+                                            <div class="teaser_heading">
+                                                <a href="" class="f-22">
+                                                    Midterms: ‘Trump effect’ weighs on America’s boom 
+                                                </a>
+                                            </div>
+                                            <p class="teaser_standfirst">
+                                                Seven alleged agents indicted in US after Dutch say cyber attack was foiled
+                                            </p>  
+                                        </div>
+                                    </div> 
+                                    <div class="teaser_img_container">
+                                        <a href="">
+                                            <div class="teaser_img_wrapper">
+                                                <img src="assets/images/main1.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>  
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="teaser teaser-article top-news hglgt-news t1">
+                                        <div class="teaser_content">
+                                            <div class="teaser_meta">
+                                                <a href="#" class="teaser_tag">
+                                                    Cyber warfare
+                                                </a> 
+                                            </div>
+                                            <div class="teaser_heading">
+                                                <a href=""> 
+                                                    Happy birthday #MeToo — there’s still a long way to go
+                                                </a>
+                                            </div>
+                                            <p class="teaser_standfirst">
+                                                Seven alleged agents indicted in US after Dutch say cyber attack was foiled
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                        <div class="teaser_content">
+                                            <div class="teaser_meta">
+                                                <a href="#" class="teaser_tag">
+                                                    Cyber warfare
+                                                </a> 
+                                            </div>
+                                            <div class="teaser_heading">
+                                                <a href=""> 
+                                                    Happy birthday #MeToo — there’s still a long way to go
+                                                </a>
+                                            </div>
+                                            <p class="teaser_standfirst">
+                                                Seven alleged agents indicted in US after Dutch say cyber attack was foiled
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                        <div class="teaser_content">
+                                            <div class="teaser_meta">
+                                                <a href="#" class="teaser_tag">
+                                                    Cyber warfare
+                                                </a> 
+                                            </div>
+                                            <div class="teaser_heading">
+                                                <a href=""> 
+                                                    Happy birthday #MeToo — there’s still a long way to go
+                                                </a>
+                                            </div>
+                                            <p class="teaser_standfirst">
+                                                Seven alleged agents indicted in US after Dutch say cyber attack was foiled
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mr-top">
+                            <h2 class="teaser_heading top-heading">
+                                <a href="" class="f-22">Most Read</a>
+                            </h2>
+                            <ol class="mr-top">
+                                <li class="teaser_collection">
+                                    <div class="teaser teaser-article top-news hglgt-news">
+                                        <div class="teaser_content">
+                                            <div class="teaser_meta">
+                                                <a href="#" class="teaser_tag">
+                                                    Cyber warfare
+                                                </a> 
+                                            </div>
+                                            <div class="teaser_heading  mr-bttm">
+                                                <a href=""> 
+                                                    Happy birthday #MeToo — there’s still a long way to go
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="teaser_collection mr-top">
+                                    <div class="teaser teaser-article top-news hglgt-news">
+                                        <div class="teaser_content">
+                                            <div class="teaser_meta">
+                                                <a href="#" class="teaser_tag ">
+                                                    Cyber warfare
+                                                </a> 
+                                            </div>
+                                            <div class="teaser_heading  mr-bttm">
+                                                <a href=""> 
+                                                    Happy birthday #MeToo — there’s still a long way to go
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </li>
+                                <li class="teaser_collection mr-top">
+                                    <div class="teaser teaser-article top-news hglgt-news">
+                                        <div class="teaser_content">
+                                            <div class="teaser_meta">
+                                                <a href="#" class="teaser_tag">
+                                                    Cyber warfare
+                                                </a> 
+                                            </div>
+                                            <div class="teaser_heading  mr-bttm">
+                                                <a href=""> 
+                                                    Happy birthday #MeToo — there’s still a long way to go
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </li>
+                                <li class="teaser_collection mr-top">
+                                    <div class="teaser teaser-article top-news hglgt-news">
+                                        <div class="teaser_content">
+                                            <div class="teaser_meta">
+                                                <a href="#" class="teaser_tag">
+                                                    Cyber warfare
+                                                </a> 
+                                            </div>
+                                            <div class="teaser_heading  mr-bttm">
+                                                <a href=""> 
+                                                    Happy birthday #MeToo — there’s still a long way to go
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </li>
+                                <li class="teaser_collection mr-top">
+                                    <div class="teaser teaser-article top-news hglgt-news">
+                                        <div class="teaser_content">
+                                            <div class="teaser_meta">
+                                                <a href="#" class="teaser_tag">
+                                                    Cyber warfare
+                                                </a> 
+                                            </div>
+                                            <div class="teaser_heading  mr-bttm">
+                                                <a href=""> 
+                                                    Happy birthday #MeToo — there’s still a long way to go
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section7" class="mr-top">
+                <div class="container">
+                    <h2 class="teaser_heading top-heading">
+                        <a href="" class="f-22">Opinion</a>
+                    </h2>
+                    <div class="row mr-top">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="teaser teaser_img">
+                                <div class="top-stories mr-top  teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="caps teaser_tag">
+                                            the big read
+                                        </a> 
+                                    </div> 
+                                    <div class="teaser_heading ">
+                                        <a href="" class="f-22">
+                                            Midterms: ‘Trump effect’ weighs on America’s boom 
+                                        </a>
+                                    </div>
+                                    <p class="teaser_standfirst">
+                                        Seven alleged agents indicted in US after Dutch say cyber attack was foiled
+                                    </p>
+                                </div>
+                            </div> 
+                            <div class="teaser_img_container">
+                                <a href="">
+                                    <div class="teaser_img_wrapper ab-img">
+                                        <img src="assets/images/main1.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>  
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="teaser teaser-article top-news hglgt-news t1">
+                                <div class="row">
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
+                                        <div class="teaser_content">
+                                            <div class="teaser_meta">
+                                                <a href="#" class="teaser_tag">
+                                                    Cyber warfare
+                                                </a> 
+                                            </div>
+                                            <div class="teaser_heading  mr-bttm">
+                                                <a href=""> 
+                                                    Happy birthday #MeToo — there’s still a long way to go
+                                                </a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                        <div class="teaser_img_container ">
+                                            <a href="">
+                                                <div class="teaser_img_wrapper img-cutout">
+                                                    <img src="assets/images/p1.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>    
+                                    </div>      
+                                </div>
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="row">
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
+                                        <div class="teaser_content">
+                                            <div class="teaser_meta">
+                                                <a href="#" class="teaser_tag">
+                                                    Cyber warfare
+                                                </a> 
+                                            </div>
+                                            <div class="teaser_heading  mr-bttm">
+                                                <a href=""> 
+                                                    Happy birthday #MeToo — there’s still a long way to go
+                                                </a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                        <div class="teaser_img_container ">
+                                            <a href="">
+                                                <div class="teaser_img_wrapper img-cutout">
+                                                    <img src="assets/images/p2.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>    
+                                    </div>      
+                                </div>
+                            </div>  
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="teaser teaser-article top-news hglgt-news t2">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="row">
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
+                                        <div class="teaser_content">
+                                            <div class="teaser_meta">
+                                                <a href="#" class="teaser_tag">
+                                                    Cyber warfare
+                                                </a> 
+                                            </div>
+                                            <div class="teaser_heading  mr-bttm">
+                                                <a href=""> 
+                                                    Happy birthday #MeToo — there’s still a long way to go
+                                                </a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                        <div class="teaser_img_container ">
+                                            <a href="">
+                                                <div class="teaser_img_wrapper img-cutout">
+                                                    <img src="assets/images/p3.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>    
+                                    </div>      
+                                </div>
+                            </div>  
+                            <div class="teaser teaser-article top-news hglgt-news mr-top t2">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top t2">
+                                <div class="row">
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                        <div class="teaser_content">
+                                            <div class="teaser_meta">
+                                                <a href="#" class="teaser_tag">
+                                                    Cyber warfare
+                                                </a> 
+                                            </div>
+                                            <div class="teaser_heading  mr-bttm">
+                                                <a href=""> 
+                                                    Happy birthday #MeToo — there’s still a long way to go
+                                                </a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                        <div class="teaser_img_container ">
+                                            <a href="">
+                                                <div class="teaser_img_wrapper img-cutout">
+                                                    <img src="assets/images/p4.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>    
+                                    </div>      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section10" class="mr-top">
+                <div class="container">
+                    <h2 class="teaser_heading top-heading">
+                        <a href=""class="f-22">Opinion</a>
+                    </h2>
+                    <div class="row mr-top">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="teaser teaser_img">
+                                <div class="top-stories mr-top  teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="caps teaser_tag">
+                                            the big read
+                                        </a> 
+                                    </div> 
+                                    <div class="teaser_heading ">
+                                        <a href="" class="f-22">
+                                            Midterms: ‘Trump effect’ weighs on America’s boom 
+                                        </a>
+                                    </div>
+                                    <p class="teaser_standfirst">
+                                        Seven alleged agents indicted in US after Dutch say cyber attack was foiled
+                                    </p>
+                                </div>
+                            </div> 
+                            <div class="teaser_img_container">
+                                <a href="">
+                                    <div class="teaser_img_wrapper ab-img">
+                                        <img src="assets/images/main1.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>  
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 t1">
+                            <div class="teaser teaser-article top-news hglgt-news ">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading  mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading  mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="teaser teaser-article top-news hglgt-news ">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading  mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading  mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section8" class="mr-top">
+                <div class="container">
+                    <h2 class="teaser_heading">
+                        <a href="" class="f-22">
+                            Visit my FTfeed
+                        </a>
+                    </h2>
+                    <p class="teaser_standfirst">
+                        Add topics to myFT to create a personalised news feed of your essential stories. Start now
+                    </p>
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button" data-toggle="tooltip" title="World">World</button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button" data-toggle="tooltip" title="Companies">Companies</button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button"data-toggle="tooltip" title="Markets">Markets</button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button"data-toggle="tooltip" title="Life &amp Arts">Life &amp Arts </button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button" data-toggle="tooltip" title="UK politics &amp policy">UK politics &amp policy</button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button" data-toggle="tooltip" title="European Union">European Union</button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button" data-toggle="tooltip" title="Politics">Personal Fitness</button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button" data-toggle="tooltip" title="US &amp Canadian companies">US &amp Canadian companies</button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button" data-toggle="tooltip" title="Politics">Politics</button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button" data-toggle="tooltip" title="Global Economy">Global Economy</button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button"  data-toggle="tooltip" title="Financials">Financials</button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                               <button class="myft-follow-button"  data-toggle="tooltip" title="Donald Trump">Donald Trump</button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button"  data-toggle="tooltip" title="Economy">Economy</button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button" data-toggle="tooltip" title="Asia-Pacific companies">Asia-Pacific companies</button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button"  data-toggle="tooltip" title="Equities">Equities</button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button" data-toggle="tooltip" title="US politics &amp policy">US politics &amp policy</button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button" data-toggle="tooltip" title="Technology sector">Technology sector</button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button" data-toggle="tooltip" title="Emerging market">Emerging markets</button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button" data-toggle="tooltip" title="Federal Reserve">Federal Reserve</button>
+                            </form>
+                            <form method="GET" class="myft-onboarding">
+                                <input type="hidden"/>
+                                <button class="myft-follow-button" data-toggle="tooltip" title="US equitis" >US equitis</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section10" class="mr-top">
+                <div class="container">
+                    <h2 class="teaser_heading top-heading">
+                        <a href="" class="f-22">Opinion</a>
+                    </h2>
+                    <div class="row mr-top">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="teaser teaser_img">
+                                <div class="top-stories mr-top  teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="caps teaser_tag">
+                                            the big read
+                                        </a> 
+                                    </div> 
+                                    <div class="teaser_heading ">
+                                        <a href="" class="f-22">
+                                            Midterms: ‘Trump effect’ weighs on America’s boom 
+                                        </a>
+                                    </div>
+                                    <p class="teaser_standfirst">
+                                        Seven alleged agents indicted in US after Dutch say cyber attack was foiled
+                                    </p>
+                                </div>
+                            </div> 
+                            <div class="teaser_img_container">
+                                <a href="">
+                                    <div class="teaser_img_wrapper ab-img">
+                                        <img src="assets/images/main1.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>  
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 t1">
+                            <div class="teaser teaser-article top-news hglgt-news ">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading  mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading  mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="teaser teaser-article top-news hglgt-news ">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading  mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading  mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section10" class="mr-top">
+                <div class="container">
+                    <h2 class="teaser_heading top-heading">
+                        <a href="" class="f-22">Opinion</a>
+                    </h2>
+                    <div class="row mr-top">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="teaser teaser_img">
+                                <div class="top-stories mr-top  teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="caps teaser_tag">
+                                            the big read
+                                        </a> 
+                                    </div> 
+                                    <div class="teaser_heading ">
+                                        <a href="" class="f-22">
+                                            Midterms: ‘Trump effect’ weighs on America’s boom 
+                                        </a>
+                                    </div>
+                                    <p class="teaser_standfirst">
+                                        Seven alleged agents indicted in US after Dutch say cyber attack was foiled
+                                    </p>
+                                </div>
+                            </div> 
+                            <div class="teaser_img_container">
+                                <a href="">
+                                    <div class="teaser_img_wrapper ab-img">
+                                        <img src="assets/images/main1.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>  
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 t1">
+                            <div class="teaser teaser-article top-news hglgt-news ">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading  mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading  mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="teaser teaser-article top-news hglgt-news ">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading  mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading  mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section10" class="mr-top">
+                <div class="container">
+                    <h2 class="teaser_heading top-heading">
+                        <a href="" class="f-22">Opinion</a>
+                    </h2>
+                    <div class="row mr-top">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="teaser teaser_img">
+                                <div class="top-stories mr-top  teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="caps teaser_tag">
+                                            the big read
+                                        </a> 
+                                    </div> 
+                                    <div class="teaser_heading ">
+                                        <a href=""class="f-22">
+                                            Midterms: ‘Trump effect’ weighs on America’s boom 
+                                        </a>
+                                    </div>
+                                    <p class="teaser_standfirst">
+                                        Seven alleged agents indicted in US after Dutch say cyber attack was foiled
+                                    </p>
+                                </div>
+                            </div> 
+                            <div class="teaser_img_container">
+                                <a href="">
+                                    <div class="teaser_img_wrapper ab-img">
+                                        <img src="assets/images/main1.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>  
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 t1">
+                            <div class="teaser teaser-article top-news hglgt-news ">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading  mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading  mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="teaser teaser-article top-news hglgt-news ">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading  mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading  mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="teaser teaser-article top-news hglgt-news mr-top">
+                                <div class="teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="teaser_tag">
+                                            Cyber warfare
+                                        </a> 
+                                    </div>
+                                    <div class="teaser_heading mr-bttm">
+                                        <a href=""> 
+                                            Happy birthday #MeToo — there’s still a long way to go
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section11" class="mr-top">
+                <div class="container">
+                    <h2 class="teaser_heading top-heading">
+                        <a href="" class="f-22">Opinion</a>
+                    </h2>
+                    <div class="row mr-top">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="teaser_img_container ">
+                                <a href="">
+                                    <div class="teaser_img_wrapper img-cutout">
+                                        <img src="assets/images/g1.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="teaser teaser_img">
+                                <div class="top-stories mr-top  teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="caps teaser_tag">
+                                            the big read
+                                        </a> 
+                                    </div> 
+                                    <div class="teaser_heading ">
+                                        <a href="">
+                                            Midterms: ‘Trump effect’ weighs on America’s boom 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="teaser_img_container ">
+                                <a href="">
+                                    <div class="teaser_img_wrapper img-cutout">
+                                        <img src="assets/images/g2.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="teaser teaser_img">
+                                <div class="top-stories mr-top  teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="caps teaser_tag">
+                                            the big read
+                                        </a> 
+                                    </div> 
+                                    <div class="teaser_heading ">
+                                        <a href="">
+                                            Midterms: ‘Trump effect’ weighs on America’s boom 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>       
+                        </div>
+                    </div>
+                </div>   
+            </section>
+            <section id="section12" class="mr-top">
+                <div class="container">
+                    <div class="row mr-top">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="teaser_img_container ">
+                                <a href="">
+                                    <div class="teaser_img_wrapper img-cutout">
+                                        <img src="assets/images/g1.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="teaser teaser_img">
+                                <div class="top-stories mr-top  teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="caps teaser_tag">
+                                            the big read
+                                        </a> 
+                                    </div> 
+                                    <div class="teaser_heading ">
+                                        <a href="">
+                                            Midterms: ‘Trump effect’ weighs on America’s boom 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="teaser_img_container ">
+                                <a href="">
+                                    <div class="teaser_img_wrapper img-cutout">
+                                        <img src="assets/images/g2.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="teaser teaser_img">
+                                <div class="top-stories mr-top  teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="caps teaser_tag">
+                                            the big read
+                                        </a> 
+                                    </div> 
+                                    <div class="teaser_heading ">
+                                        <a href="">
+                                            Midterms: ‘Trump effect’ weighs on America’s boom 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>       
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="teaser_img_container ">
+                                <a href="">
+                                    <div class="teaser_img_wrapper img-cutout">
+                                        <img src="assets/images/g2.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="teaser teaser_img">
+                                <div class="top-stories mr-top  teaser_content">
+                                    <div class="teaser_meta">
+                                        <a href="#" class="caps teaser_tag">
+                                            the big read
+                                        </a> 
+                                    </div> 
+                                    <div class="teaser_heading ">
+                                        <a href="">
+                                            Midterms: ‘Trump effect’ weighs on America’s boom 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>       
+                        </div>
+                    </div>                   
+                 </div>   
+            </section>  
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 footer_matrix-grp">
+                            <div class="footer_matrix-title mr-top">
+                                Support
+                            </div>
+                            <div class="footer_matrix-column ">
+                                <a href="" class="footer_matrix-link mr-top">View Site Tips</a>
+                                <a href="" class="footer_matrix-link mr-top">Help Centre</a>
+                                <a href="" class="footer_matrix-link mr-top">About Us</a>
+                                <a href="" class="footer_matrix-link mr-top">Accessibility</a>
+                                <a href="" class="footer_matrix-link mr-top mr-bttm">myFT Tour</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 footer_matrix-grp">
+                            <div class="footer_matrix-title mr-top">
+                                Support
+                            </div>
+                            <div class="footer_matrix-column ">
+                                <a href="" class="footer_matrix-link mr-top">View Site Tips</a>
+                                <a href="" class="footer_matrix-link mr-top">Help Centre</a>
+                                <a href="" class="footer_matrix-link mr-top">About Us</a>
+                                <a href="" class="footer_matrix-link mr-top">Accessibility</a>
+                                <a href="" class="footer_matrix-link mr-top mr-bttm">myFT Tour</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 footer_matrix-grp t2">
+                            <div class="footer_matrix-title mr-top">
+                                Support
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 footer_matrix-column ">
+                                    <a href="" class="footer_matrix-link mr-top">View Site Tips</a>
+                                    <a href="" class="footer_matrix-link mr-top">Help Centre</a>
+                                    <a href="" class="footer_matrix-link mr-top">About Us</a>
+                                    <a href="" class="footer_matrix-link mr-top">About Us</a>
+                                    <a href="" class="footer_matrix-link mr-top">Accessibility</a>
+                                    <a href="" class="footer_matrix-link mr-top mr-bttm">myFT Tour</a>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 footer_matrix-grp ">
+                                    <div class="footer_matrix-column">
+                                        <a href="" class="footer_matrix-link mr-top">View Site Tips</a>
+                                        <a href="" class="footer_matrix-link mr-top">Help Centre</a>
+                                        <a href="" class="footer_matrix-link mr-top">About Us</a>
+                                        <a href="" class="footer_matrix-link mr-top">Accessibility</a>
+                                        <a href="" class="footer_matrix-link mr-top mr-bttm">myFT Tour</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 footer_matrix-grp t2">
+                            <div class="footer_matrix-title mr-top">
+                                Support
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 footer_matrix-column ">
+                                    <a href="" class="footer_matrix-link mr-top">View Site Tips</a>
+                                    <a href="" class="footer_matrix-link mr-top">Help Centre</a>
+                                    <a href="" class="footer_matrix-link mr-top">About Us</a>
+                                    <a href="" class="footer_matrix-link mr-top">About Us</a>
+                                    <a href="" class="footer_matrix-link mr-top">Accessibility</a>
+                                    <a href="" class="footer_matrix-link mr-top mr-bttm">myFT Tour</a>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 footer_matrix-grp ">
+                                    <div class="footer_matrix-column">
+                                        <a href="" class="footer_matrix-link mr-top">View Site Tips</a>
+                                        <a href="" class="footer_matrix-link mr-top">Help Centre</a>
+                                        <a href="" class="footer_matrix-link mr-top">About Us</a>
+                                        <a href="" class="footer_matrix-link mr-top">Accessibility</a>
+                                        <a href="" class="footer_matrix-link mr-top mr-bttm">myFT Tour</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-ext-link ">
+                        <a href="" class="footer_matrix-title mr-top" >More from the FT Group</a>
+                    </div>
+                    <div class="footer_copyright mr-top">
+                        <small>
+                            Markets data delayed by at least 15 minutes. © THE FINANCIAL TIMES LTD 2018.
+                            <abbr title="Financial Times" aria-label="F T">FT</abbr>
+                            and ‘Financial Times’ are trademarks of The Financial Times Ltd.
+                            <br>
+                            The Financial Times and its journalism are subject to a self-regulation regime under the 
+                            <a href="http://aboutus.ft.com/en-gb/ft-editorial-code/" aria-label="F T Editorial Code of Practice">FT Editorial Code of Practice</a>
+						</small>
+                    </div>
+                </div>
+            </footer> 
+            <div class="footer_brand">
+                <div class="container">
+                    <div class="footer_brand-logo">
+                        A Nikkei Company
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/header_anim.js"></script>
+    <script src="js/menu-open.js"></script>
+    <script src="js/side-bar-toggle.js"></script> 
+    <script src="js/bootstrap.min.js"async></script>
+</body>
+</html>
