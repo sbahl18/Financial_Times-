@@ -1,0 +1,23 @@
+#parent{
+    
+    background-color: lightsalmon;
+    
+}
+.column_1{
+    width:50%;
+    float:left;
+    background-color: red;
+}
+.column_2{
+    background-color: lightblue;
+    float:left;
+    width:50%;
+}
+.clearfix:after{
+    content:"";
+    clear:both;
+}
+.div_1{
+    background-color: blue;
+    clear:left;
+}
